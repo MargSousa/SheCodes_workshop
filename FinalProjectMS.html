@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title> 🎶 Music of the month</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 30px 200px 30px 200px;
+                background-color: rgb(206, 201, 201);
+            }
+
+            .title1 {
+                font-size: 26px;
+                font-weight: 300px;
+                text-align: center;
+                color:  rgba(43, 40, 40, 0.523);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .title2 {
+                font-size: 26px;
+                text-align: center;
+                padding: 20px;
+            }
+
+            section {
+                list-style: none;
+                background-color: white;
+                padding: 30px 200px 10px 150px;
+                text-align: center;
+            }
+
+            .text {
+                width: 450px;
+                margin: 0px 50px 50px 120px;
+                font-size: 16px;
+                text-align: justify;
+            }
+
+            .image {
+                text-align: center;
+                margin: 20px 20px 50px 20px;
+            }
+
+            img {
+                width: 70%;
+            }
+
+            .box {
+                list-style-type: none;
+                margin: 10px 0px 10px 150px;
+                text-align:justify;
+            }
+
+            ul {
+                list-style: none;
+                font-family: Arial;
+            }
+
+            a {
+                color: black;
+            }
+
+            .link2 {
+                text-decoration: none;
+                color: black;
+                font-weight: 1px;
+                font-weight: bold;
+            }
+
+            .tickets {
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                background-color: rgb(103, 3, 103);
+                padding: 15px 15px 15px 15px;
+                margin: 30px 30px 60px 250px;
+                width: 150px;
+                text-align: center;
+                border-radius: 30px;
+                border-style: solid;
+                box-shadow: 5px 5px 5px grey;
+                transition: background-color 200ms ease;
+                cursor: pointer;
+            }
+
+            .tickets:hover {
+                background-color: rgb(43, 40, 40);
+                border-style: solid;
+                color: linear-gradient(to top, white, grey);
+            }
+
+            .end {
+                font-size: 16px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section>
+            <hr>
+            <h1 class="title1"><strong>MUSIC OF THE MONTH</strong></h1>
+            <hr>
+            <h1 class="title2"><strog>Mumford and Sons are back!</strog></h2>
+            <p class="text"> If I had to choose my music of choice for this month it would definitely be Mumford and Sons.
+                The british band that started in 2007 is led by Marcus Mumford and are known by their folky music with 
+                a banjo always present. Some of their most known songs are <em>Little Lion Man</em>, <em>The Cave</em> and 
+                <em>I Will Wait</em>. However, for the last years they had a change in sound and tuned it up by introducing 
+                more electric guitars into their songs. I myself, really enjoyed this change because they still maintain
+                that <a href="https://www.mumfordandsons.com" target="_blank" class="band"> Mumford and Sons</a> vibe that we all 
+                know and love with a little rock n'roll. And now guess what? They are back with new music and a new tour which 
+                includes a date in <strong>Lisboa</strong>! <br> <br>
+                The band is returning to their folky roots with the release of a new album titled <em>Delta</em>, which 
+                includes the new single <em>Guiding Light</em>. This will be a groundbreaking new show not to be missed!
+                If you would like to join this event, tickets are already on sale and you can purchase them below.
+            </p>        
+            <div class="image">
+                 <img src="https://uk.tmconst.com/ccp-salesforce-images/ES/mumford_1440x450.jpg" alt="">
+            </div>
+            <div class="box">
+                <ul>
+                    <li> 🎶 Mumford and Sons - Delta Tour 2019</li>
+                    <li> 📅 25th April 2019</li>
+                    <li> 🏢 Altice Arena - Parque das Nações, Lisboa</li>                       
+                    <li><a href="https://www.everythingisnew.pt/mumford-sons/" target="_blank" class="link2"> 🌐 Click here for more informations</a></li>
+                </ul>
+            </div>
+            <div class= "tickets">Buy tickets</div>
+            <hr>
+            <p><span class="end"><strong>Margarida Sousa - She Codes Workshop 8.0 Final Project</strong></span></p>
+        </section>
+    </body>
+    <script>
+        document.querySelector('.tickets').addEventListener('click', function() {
+            let age = prompt('Please, enter your age:');
+            if (age < 16 ) {                
+                alert("I'm sorry but you are not old enough to buy tickets.")
+            } else {
+                window.open("https://ticketline.sapo.pt/evento/mumford-sons-delta-tour-37725");
+            }
+        });
+    </script>
+</html>
